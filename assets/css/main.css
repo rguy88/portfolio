@@ -1,0 +1,672 @@
+/* Basic */
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-attachment: scroll;
+  background-size: auto;
+  background-position: top;
+}
+
+@media screen and (max-width: 2000px) {
+  html,
+  body {
+    min-width: 320px;
+    padding: 2% 0 2%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html,
+  body {
+    padding: 4% 0 4%;
+  }
+}
+
+/* Typo */
+
+html {
+  font-size: 13pt;
+}
+
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  html {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12pt;
+  }
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 480px) {
+  .special {
+    text-align: center;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  p {
+    margin: 0 0 2rem 0;
+  }
+  .text-inner {
+    padding-left: 40px;
+  }
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+
+input,
+select,
+textarea {
+  color: #1e1f23;
+}
+
+a {
+  color: #000000;
+  text-decoration-color: #c4def9;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration-color: #e3dec9;
+}
+
+strong,
+b {
+  color: #1e1f23;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #242425;
+  font-family: "Inter", sans-serif;
+}
+
+/* List */
+
+ul {
+  list-style-type: none;
+  margin: 0 0 2rem 0;
+}
+
+/* Background moving gradient */
+
+body {
+  background: linear-gradient(-45deg, #c4def9, #e9e5d8, #cbebff, #ffc4e1);
+  background-size: 200% 200%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#header {
+  cursor: default;
+  position: relative;
+  text-align: center;
+}
+
+#header > .logo {
+  margin: 0 0 4rem 0;
+  padding: 0;
+}
+
+#header > .logo a {
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 736px) {
+  #header > .logo {
+    margin: 0 0 2rem 0;
+  }
+
+  #header > .logo a {
+    font-size: 3rem;
+  }
+}
+
+/* Main */
+
+#main > .inner {
+  margin: 0 auto;
+  width: 80rem;
+  max-width: 90%;
+  margin-bottom: 2rem;
+  border-radius: 32px;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+#main > .headline {
+  margin: 0 auto;
+  width: 80rem;
+  max-width: 90%;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+  #main > .inner {
+    max-width: 800px;
+  }
+  #main > .headline {
+    max-width: 800px;
+  }
+}
+
+.wrapper > header {
+  padding: 2rem;
+  margin: 0;
+}
+
+.wrapper > header h2 {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.wrapper > header h2:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 1px;
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper > header.special {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper > header {
+    padding: 1.5rem;
+  }
+
+  .wrapper > header h2 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper > header h2:after {
+    width: 50%;
+  }
+}
+
+.wrapper.style1 .content {
+  padding: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper.style1 .content {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper.style1 .content {
+    padding: 2rem;
+  }
+}
+
+.wrapper.style2 {
+  background: #1e1f23;
+  padding: 6rem;
+}
+
+.wrapper.style2 header {
+  background: #121315;
+  border-radius: 4px 4px 0 0;
+}
+
+.wrapper.style2 header h2:after {
+  background-color: rgba(145, 118, 118, 0.125);
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper.style2 {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper.style2 {
+    padding: 2rem;
+  }
+}
+
+/* Just for some pages visible links */
+
+#linksvisible a {
+  text-decoration: underline;
+  color: rgb(89, 93, 117);
+}
+
+/* Podcast Button */
+
+.btn-gradient {
+  background: linear-gradient(to right, #e3dec9, #c9e5e0) border-box;
+  border-radius: 12px;
+  border: 24px solid transparent;
+  transition-duration: 0.4s;
+  margin: 0 0 40px 40px;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #c4def9, #e2e4ec) border-box;
+  border-radius: 48px;
+  border: 24px solid transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-gradient {
+    margin: 0 auto 40px auto;
+  }
+}
+
+/* Back to homepage button */
+
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #e3dec9, #c9e5e0) border-box;
+  border-radius: 48px;
+  border: 12px solid transparent;
+  transition-duration: 0.4s;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #c4def9, #e2e4ec) border-box;
+}
+
+@media screen and (max-width: 980px) {
+  .button {
+    border: 6px solid transparent;
+  }
+}
+
+/* 404 button */
+
+.button404 {
+  background: linear-gradient(to right, #e3dec9, #c9e5e0) border-box;
+  border-radius: 48px;
+  border: 24px solid transparent;
+  transition-duration: 0.4s;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.button404:hover {
+  background: linear-gradient(to right, #c4def9, #e2e4ec) border-box;
+}
+
+/* paypal button */
+
+.buttonPaypal {
+  background: linear-gradient(to right, #003087, #3b7bbf) border-box;
+  color: #fff;
+  border-radius: 48px;
+  border: 24px solid transparent;
+  transition-duration: 0.4s;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.buttonPaypal:hover {
+  background: linear-gradient(to right, #2e353c, #646a83) border-box;
+  box-shadow: 0 0.5em 0.5em -0.4em #a9cef5;
+  transform: translateY(-0.25em);
+}
+
+/* revolut button */
+
+.buttonRevolut {
+  background: linear-gradient(to right, #000000, #3b3b3b) border-box;
+  color: #fff;
+  border-radius: 48px;
+  border: 24px solid transparent;
+  transition-duration: 0.4s;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.buttonRevolut:hover {
+  background: linear-gradient(to right, #2e353c, #646a83) border-box;
+  box-shadow: 0 0.5em 0.5em -0.4em #a9cef5;
+  transform: translateY(-0.25em);
+}
+
+/* switch languages on reading page */
+
+a.buttonLanguage {
+  border-radius: 48px;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 0 20px;
+  background-color: #e2e4ec;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.active {
+  background-color: #c4def9;
+}
+
+.contentLanguage {
+  margin-top: 30px;
+}
+
+div[class*="contentLanguage-"] {
+  display: none;
+}
+
+div.active {
+  display: block;
+}
+
+/* gifs */
+
+.gif-embed {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 64px;
+  border-radius: 164px;
+}
+
+@media screen and (max-width: 980px) {
+  .gif-embed {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* small text */
+
+.smallText {
+  font-size: 0.8rem;
+  margin: 1rem 0 0 0;
+}
+
+/* copy key to clipboard for cash page */
+
+#copyKey {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #c4def9;
+  color: #ffffff;
+  width: 180px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+#copyKey:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  bottom: -20px;
+  left: 82px;
+  clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-10px);
+  transition: all 300ms ease;
+}
+#copyKey:after {
+  content: attr(tooltip);
+  width: 140px;
+  bottom: -48px;
+  left: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #8e8e8e;
+  color: #ffffff;
+  transform: translateY(-10px);
+  transition: all 300ms ease;
+  z-index: 1;
+}
+#copyKey:hover:before,
+#copyKey:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* copy Iban to clipboard for cash page */
+
+#copyIban {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #c4def9;
+  color: #ffffff;
+  width: 180px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+#copyIban:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  bottom: -20px;
+  left: 82px;
+  clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-10px);
+  transition: all 300ms ease;
+}
+#copyIban:after {
+  content: attr(tooltip);
+  width: 140px;
+  bottom: -48px;
+  left: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #8e8e8e;
+  color: #ffffff;
+  transform: translateY(-10px);
+  transition: all 300ms ease;
+  z-index: 1;
+}
+#copyIban:hover:before,
+#copyIban:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* form */
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+
+iframe[src*="google.com/forms"] {
+  width: 100%;
+  height: 1200px;
+}
+
+@media screen and (max-width: 1680px) {
+  .form {
+    padding: 0 0px;
+    margin: 0 0px;
+  }
+}
+
+.footer-text {
+  text-align: center;
+  border: 3px solid #becdeb;
+  border-radius: 24px;
+  opacity: 0.3;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.footer-text:hover {
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
+}
+
+.footer-text > a {
+  color: #7b7f88;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.footer-text > a:hover {
+  color: #becdeb;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
+}
